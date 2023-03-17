@@ -1,0 +1,22 @@
+@import url('https://fonts.googleapis.com/css2?family=Anek+Malayalam:wght@200&family=Noto+Sans:wght@100&display=swap'); 
+
+/**{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Anek Malayalam, sans-serif;
+}*/
+
+#div{
+
+    border: 1px solid black;
+    width: 150px;
+    height: 150px;
+    padding: 20px;
+    padding-left: 20px;
+    padding-top: 20px;
+    background-color: blue;
+    color: white;
+    font-weight: bolder;
+    text-transform: uppercase;
+}

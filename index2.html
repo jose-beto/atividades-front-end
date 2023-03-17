@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Continuando estudos com o DOM</title>
+</head>
+
+<body>
+    <h1 id="h1">Titulo do meu site</h1>
+    <p id="p">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+         Vitae tenetur fuga eveniet. Excepturi at odit
+        praesentium deleniti, dignissimos dolorem unde
+         impedit mollitia nemo ex sapiente quisquam provident, distinctio
+        dolore eaque.</p>
+
+        <h2 class="teste">Teste</h2>
+         <h2 class="teste">Teste</h2>
+         <h2 class="teste">Teste</h2>
+         <h2 class="teste">Teste</h2>
+
+        <script>                         // Para manipular as tags do HTML com JS
+                                        //  precissamos recuperar essas tags
+                                        // armazenando dentro de variaveis pelo id  pela classe 
+                                        // pelo nome da tag, pelo atributo nome, pelo query selector
+
+                                        // Quando chamamos uma classe, ele armazena os elementos dentro
+                                        // de um array, espeficicar a tag dentro do array, lembrando que 
+                                        // sempre começa na posição zero.
+
+            var h1 = document.getElementById("h1")
+            var p = document.querySelectorAll("#p")
+            var h2 = document.querySelectorAll(".teste")
+
+            h2.forEach((tag)=>{
+                tag.style.color = "brown" // Para cada tag faça um estilo marrom
+            } )
+
+
+
+        </script>
+</body>
+
+</html>
